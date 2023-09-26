@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Page Title</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+        <script src='main.js'></script>
+    </head>
+    <body>
+        <form action = "save.ok.php">
+            <fieldset style = 'width:200px; margin: 5px;'>
+            <legend>개인 정보 입력</legend>
+        이름: <input type = "text" name = "name"/><br><br>
+        <select name = 'major'>
+            <option value="1">전산전자</option>
+            <option value="2">기계공학</option>
+            <option value="3">생명과학</option>
+            <option value="4">경영경제</option>
+        </select>
+        <br><br>
+        <input type = 'date' min = '1990-01-01' max = '2004-12-31' name ='fromdate'>
+    </fieldset>
+    <input type = 'submit' value = '저장'> <input type = 'reset' value = '취소'>
+        </form>
+    </body>
+</html>
+//이름 - input text, 전공 - select, 생일 - input date
