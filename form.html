@@ -10,9 +10,9 @@
     </head>
     <body>
         <form action = "save.ok.php">
-            <fieldset style = 'width:200px; margin: 5px;'>
+            <fieldset style = 'width:300px; margin: 5px;'>
             <legend>개인 정보 입력</legend>
-        이름: <input type = "text" name = "name"/><br><br>
+        이름: <input type = "text" name = "name"/><br>
         성별 <br> <input type = "radio" name = "gender" value = "male">남성
         <input type = "radio" name = "gender" value = "female">여성<br>
         전공: <select name = 'major'>
@@ -23,6 +23,13 @@
         </select>
         <br><br>
         생일: <input type = 'date' min = '1990-01-01' max = '2004-12-31' name ='fromdate'>
+        <br>
+        취미: <input type = "checkbox" id = "hobby1" name = "hobby1" value = "1" checked>영화감상
+        <input type = "checkbox" id = "hobby2" name = "hobby2" value = "2">음악 듣기
+        <input type = "checkbox" id = "hobby3" name = "hobby3" value = "3">백준 풀기<br><br>
+
+        본인 소개: <br>
+        <textarea name = 'content' cols = 40 rows = 6></textarea>
     </fieldset>
     <input type = 'submit' value = '저장'> <input type = 'reset' value = '취소'>
         </form>
